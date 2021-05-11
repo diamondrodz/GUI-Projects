@@ -57,6 +57,28 @@ def week1():
     Bclear = Button(text = "Clear window", bg = "white", command = exportant
     Bclear.grind(column = 3, row = 1)
 
+def week2():
+    clearWindow()
+    L1W2 = Label(top. text="Dice Roller Program")
+    L1W2.grid(column =  0, row = 1)
+
+    L2W2 = Label(top, text = "How many sides?")
+    L2W2.grid(column = 0, row = 2)
+
+    L3W2 = Label(top, text = "How many rolls?")
+    L3W2,grid(column = 2, row = 2)
+
+    E1W2 = Entry(top, bd = 5)
+    E1W2.grid(column = 0, row =3)
+
+    E2W2 = Entry(top, bd = 5)
+    E2W2.grid(column=2, row= 3)
+
+    B1W2 = Button(text="Roll!", bd= "yellow")
+    B1W2.grid(column= 2, row=4)
+
+    #to add: roll function and exit button
+
     
 if __name__ == "__main__":
      mainMenu()
