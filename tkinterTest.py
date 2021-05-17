@@ -58,6 +58,29 @@ def week1():
     Bclear.grind(column = 3, row = 1)
 
 def week2():
+    def rollDice():
+        #update out variable data
+        dieType = E1W2.get()
+        rollTimes = E2W2.get()
+        
+        #clear window AFTRER pulling Entry data
+        clearWindow()
+        
+        #calculate dice rolls
+        for x in range(0, int(rollTimes)):
+            myRolls.append(random.randint(1, int(dieType)))
+            
+        #display dice rolls and present an exit button 
+        L4W2 = Label(top, text= "Here are your rolls!")
+        L4W2.grid(column= 0, row =1)
+        #this one will use a .format() statement
+        L5W2 = Label(top)
+
+        B2W2 = Button()
+
+
+
+    
     clearWindow()
     L1W2 = Label(top. text="Dice Roller Program")
     L1W2.grid(column =  0, row = 1)
