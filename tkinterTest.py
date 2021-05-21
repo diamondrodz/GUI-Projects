@@ -15,7 +15,7 @@ def exportList():
     with open('test.txt', 'w') as f:
         for item in playlist:
             f.write("%s\n" % item)
-def clearWindow:
+def clearWindow():
     for  widgets in top.winfo_children():
         widgets.destory()
 
